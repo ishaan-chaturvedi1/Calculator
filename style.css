@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    height: 100%;
+    width: 100vw;
+    background-color: whites;
+    color: white;
+}
+
+.calculator {
+    width: 24vw;
+    border-radius: 20px;
+    padding: 18px;
+    background-color: black;
+}   
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Inter;
+    font-weight: 300;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}    
+
+.display{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px;
+    margin-top: 2px;
+    font-size: 65px;
+    width: 22vw;
+    text-align: right;
+    font-family: Inter;
+    font-weight: 300;
+}
+
+.row {
+    width: 24vw;
+}
+
+.button-dark-gray {
+    border-radius: 60px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    width:5vw;
+    background-color: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    transition: all 0.4s ease 0s;
+    font-weight: 300;
+}
+
+.button-dark-gray:active {
+    background-color: gray;
+}
+
+.button-orange{
+    border-radius: 60px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    width: 5vw; 
+    background-color: #fe9505;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    transition: all 0.4s ease 0s;
+    font-weight: 300;
+}
+
+.button-orange:active {
+    background-color: white;
+}
+
+.button-gray {
+    border-radius: 60px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    width: 5vw; 
+    background-color: #a5a5a5;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    transition: all 0.4s ease 0s;
+    font-weight: 300;
+}
+
+.button-gray:active {
+    background-color: white;
+}
+
+.button-zero {
+    border-radius: 60px;
+    padding: 10px 15px; 
+    font-size: 35px; 
+    width: 11.3vw;
+    background-color: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 300;
+    text-align: start;
+    transition: all 0.4s ease 0s;
+}
+
+.button-zero:active {
+    background-color: gray;
+}
+
+@media (max-width: 800px) {
+    .calculator {
+        width: 80vw
+    }
+    .row{
+        width: 80vw;
+    }
+    .display {
+        width: 78vw;
+    }
+    .button-zero {
+        width: 36.6vw;
+    }
+    .button-gray{
+        width: 17vw;
+    }
+    .button-dark-gray{
+        width: 17vw;
+    }
+    .button-orange{
+        width: 17vw;
+    }        
+    
+}
